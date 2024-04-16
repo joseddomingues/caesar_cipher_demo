@@ -1,3 +1,9 @@
+# Mac files
+*.DS_Store
+
+# Encrypted files
+*encrypted*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

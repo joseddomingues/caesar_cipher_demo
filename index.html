@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Cifra de César</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="d-flex flex-column align-items-center">
+    <header class="container text-center mt-4">
+        <img class="logo img-fluid" src="imgs/dia_aberto.jpeg" alt="Logo dia aberto">
+        <h1 class="text-center">Cifra de César</h1>
+    </header>
+
+    <main class="container d-flex flex-column align-items-center">
+        <section class="charts d-flex flex-wrap justify-content-center mb-4">
+            <canvas id="chart_alfabeto_pt" class="img-fluid"></canvas>
+            <canvas id="chart_alfabeto_cifrado" class="img-fluid"></canvas>
+        </section>
+
+        <section class="card-section mb-4">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h2>Texto Cifrado</h2>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text" id="result"></p>
+                </div>
+                <div class="card-footer text-muted">
+                    <h5 class="card-title">Pistas Cifradas</h5>  <p class="card-text" id="encryped-clues"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section mb-4">
+            <div class="container form-group">
+                <label for="number">Introduz o valor da cifra de César:</label>
+                <input type="number" id="number" min="0" max="26" class="form-control" />
+            </div>
+        </section>
+
+        <section class="button-section text-center">
+            <button onclick="decode()" class="btn btn-primary">Descodifica</button>
+            <button onclick="load_encrypted_file()" class="btn btn-secondary">Reiniciar</button>  </section>
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

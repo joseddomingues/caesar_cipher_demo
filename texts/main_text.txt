@@ -1,0 +1,13 @@
+A cifra de César, usada por Júlio César em 58 a.C, é uma técnica de encriptação baseada na rotação das letras que compoem uma mensagem. Essencialmente, envolve mudar cada letra do alfabeto um número fixo de posições, K, indicada pelo utilizador. Por exemplo, empregando uma rotação de K=3, a letra 'A' torna-se 'D', 'B' torna-se 'E' e assim por diante.
+Considerando a frase “Olá mundo”, e um K=3, teremos o texto cifrado “Rod pxqgr”.
+
+Ao longo da história, a cifra de César foi amplamente utilizada, especialmente em contextos militares. No entanto, a sua suscetibilidade a ataques de força bruta e análise de frequência acabou com o seu uso.
+
+Al-Kindi, um matemático árabe, foi a primeira pessoa a perceber destornar a cifra e a reverter a rotação para obter o texto original.
+Fez isto utilizando uma análise de frequência que explora padrões nas frequências das letras no texto encriptado.
+Considerando a frequência de cada letra do alfabeto em relação a todo o conteúdo textual nessa língua, quando comparado com a frequência de cada letra no texto cifrado observa-se uma rotação de frequências em relação à referência, de onde conseguimos retirar o K.
+Supondo um alfabeto com 5 letras, A, B, C, D e E. Se observármos a frequência de 3, 4, 5, 6, 7 respetivamente, em relação a todo o conteúdo fabricado por este alfabeto, e observármos uma frequência de 5, 6, 7, 3, 4 num texto cifrado composto por letras deste mesmo alfabeto, então conseguimos observar que o K usado nesta cifra de César será de 3.
+
+Hoje em dia, métodos avançados de criptografia como o AES são um exemplo das melhores abordagens ​​para proteger informações confidenciais na era digital.
+
+Para poderes avançar para a próxima fase necessitas de uma password de acesso. Descodifica as pistas abaixo manualmente, utiliza-as de forma sequencial no jogo Ipurdle, e descobre a pista final que vence o jogo. Boa sorte!
