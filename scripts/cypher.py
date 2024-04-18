@@ -12,11 +12,11 @@ def caesar_cipher(text: str, shift: int) -> str:
     Returns:
         str: Encrypted text
     """
-    alphabet = "abcdefghijklmnopqrstuvwxyzàáãâäèéẽêëìíĩîïóõôöùúũûüç"
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
     shifted_alphabet = alphabet[shift:] + alphabet[:shift]
     shifted_upper_alphabet = shifted_alphabet.upper()
 
-    def translate(char:str):
+    def translate(char: str):
         if char.isalpha():
             index = alphabet.find(char.lower())
             if index >= 0:
