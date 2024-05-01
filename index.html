@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">  <meta charset="utf-8">
+<html lang="pt-BR">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
@@ -31,7 +32,14 @@
                     <p class="card-text" id="result"></p>
                 </div>
                 <div class="card-footer text-muted">
-                    <h5 class="card-title">Pistas Cifradas</h5>  <p class="card-text" id="encryped-clues"></p>
+                    <h5 class="card-title">Pistas Cifradas</h5>
+                    <p class="card-text" id="encryped-clues"></p>
+                    <div class="card-footer text-muted">
+                        <h5 class="card-title">Alfabeto</h5>
+                        <div class="alphabet-ruler">
+                            <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -45,7 +53,8 @@
 
         <section class="button-section text-center">
             <button onclick="decode()" class="btn btn-primary">Descodifica</button>
-            <button onclick="load_encrypted_file()" class="btn btn-secondary">Reiniciar</button>  </section>
+            <button onclick="load_encrypted_file()" class="btn btn-secondary">Reiniciar</button>
+        </section>
     </main>
 
     <script src="scripts/script.js"></script>
