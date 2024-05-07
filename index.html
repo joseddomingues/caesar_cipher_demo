@@ -9,15 +9,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
+        @media (max-width: 600px) {
+            .alphabet-ruler td {
+                font-size: 0.8em;
+                /* Adjust as needed */
+            }
+        }
+
         .alphabet-ruler {
-            width: 100%;
-            text-align: center;
-            border-collapse: collapse;
+            margin: auto;
+        }
+
+        .alphabet-ruler {
+            margin: auto;
+            border: 1px solid #596269;
+            /* Adjust as needed */
         }
 
         .alphabet-ruler td {
             border: 1px solid #596269;
-            padding: 10px;
+            /* Adjust as needed */
         }
     </style>
 </head>
@@ -48,37 +59,38 @@
                     <p class="card-text" id="encryped-clues"></p>
                     <div class="card-footer text-muted">
                         <h5 class="card-title">Alfabeto</h5>
-                        <table class="alphabet-ruler">
-                            <td>A</td>
-                            <td>B</td>
-                            <td>C</td>
-                            <td>D</td>
-                            <td>E</td>
-                            <td>F</td>
-                            <td>G</td>
-                            <td>H</td>
-                            <td>I</td>
-                            <td>J</td>
-                            <td>K</td>
-                            <td>L</td>
-                            <td>M</td>
-                            <td>N</td>
-                            <td>O</td>
-                            <td>P</td>
-                            <td>Q</td>
-                            <td>R</td>
-                            <td>S</td>
-                            <td>T</td>
-                            <td>U</td>
-                            <td>V</td>
-                            <td>W</td>
-                            <td>X</td>
-                            <td>Y</td>
-                            <td>Z</td>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="alphabet-ruler">
+                                <td>A</td>
+                                <td>B</td>
+                                <td>C</td>
+                                <td>D</td>
+                                <td>E</td>
+                                <td>F</td>
+                                <td>G</td>
+                                <td>H</td>
+                                <td>I</td>
+                                <td>J</td>
+                                <td>K</td>
+                                <td>L</td>
+                                <td>M</td>
+                                <td>N</td>
+                                <td>O</td>
+                                <td>P</td>
+                                <td>Q</td>
+                                <td>R</td>
+                                <td>S</td>
+                                <td>T</td>
+                                <td>U</td>
+                                <td>V</td>
+                                <td>W</td>
+                                <td>X</td>
+                                <td>Y</td>
+                                <td>Z</td>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <section class="form-section mb-4">
